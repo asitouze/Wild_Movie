@@ -64,7 +64,25 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh - 111 - 100;
 }
+
+
+
+
+
+
+
+
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+
+
 
 /* Images que l'on va slide avec une taille choisit*/
 .mySlides {
@@ -75,6 +93,7 @@ main{
 
 .display-container {
     position: relative;
+    margin-bottom: 30px;
 }
 
 /* Déplacement des flèche sur l'image */
@@ -103,6 +122,59 @@ main{
     height: 100%;
 }
 
+
+
+
+
+/* Style pour le premier Slider */
+.mySlides1 {
+    display: none;
+    width: 1024px;
+    height: 400px;
+}
+
+.display-container1 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Déplacement des flèches sur l'image */
+.display-left1,
+.display-right1 {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.display-left1 {
+    left: 10px;
+}
+
+.display-right1 {
+    right: 10px;
+}
+
+.display-left1 img,
+.display-right1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white; 
+    font-size: 18px; 
+    text-align: center;
+}
+
+
 /* Le footer qui est en flex */
 footer {
     background-color: #2B2B2B;
@@ -111,7 +183,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height:120px
+    height:100px
 }
 
 section {
