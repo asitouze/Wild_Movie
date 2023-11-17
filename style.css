@@ -37,33 +37,33 @@ a:hover {
     margin-top: 5px;
     padding: 15px;
     border-radius: 10px;
-    width: 70%; 
+    width: 70%;
     background-image: url('Img nav/Loupe.png');
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
-    background-size: 20px auto; 
+    background-size: 20px auto;
 }
 
 /* Container de la barre de recherche avec position relative */
 .search-container {
     position: relative;
-    width: 50%; 
+    width: 50%;
 }
 
 /* Pour le bouton contact */
 button {
     background-color: blue;
     color: #D7D7D7;
-    margin:10px;
+    margin: 10px;
     /* padding: 10px; */
 }
 
 /* Tous les éléments que l'on retrouve dans le main sont en flex*/
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 111 - 100);
+    min-height: calc(100vh - 111px - 100px);
 }
 
 h2 {
@@ -95,6 +95,7 @@ h2 {
     border: none;
     cursor: pointer;
 }
+
 .display-left {
     left: 10px;
 }
@@ -151,20 +152,20 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white; 
-    font-size: 18px; 
+    color: white;
+    font-size: 18px;
     text-align: center;
 }
 
 /* Le footer qui est en flex */
 footer {
     background-color: #2B2B2B;
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height:100px
+    height: 100px
 }
 
 section {
@@ -173,4 +174,95 @@ section {
 
 section h3 {
     margin: 0 20px;
+}
+
+
+#icons {
+    display:none;
+    cursor: pointer;
+}
+
+/* Pour le responsive design d'un portable */
+@media screen and (max-width:1064px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+    main {
+        min-height: calc(100vh - 133.2px - 100px);
+    }
+
+    .mySlides {
+        width: 100%;
+        height: auto;
+    }
+
+    .mySlides1 {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+
+
+#searchbar {
+    margin-top: 2.5px;
+    padding: 15px;
+    width: 200px;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+    #icons {
+        display: block;
+    }
+
+    #icons:before {
+        content: "\2630";
+    }
+
+    .active #icons:before {
+        content: "\2715";
+    }
+
+    
+    nav ul {
+        position: fixed;
+        display: none;
+        top:5%;
+        flex-direction: column;
+        width: 100%;
+        background-color: #D7D7D7;
+        text-align: center;
+        transition: 0.25s;
+    }
+
+    nav li {
+        padding:3px;
+    }
+
+    nav.active ul {
+        display:block;
+        left: 0;
+        position: relative;
+    }
 }
