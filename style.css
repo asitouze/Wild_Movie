@@ -72,7 +72,7 @@ h2 {
     margin: 10px 0px;
 }
 
-/* Images que l'on va slide avec une taille choisit*/
+/* Images que l'on va slide avec une taille choisit et première slider*/
 .mySlides {
     display: none;
     width: 1024px;
@@ -110,7 +110,7 @@ h2 {
     height: 100%;
 }
 
-/* Style pour le premier Slider */
+/* Style pour le deuxième Slider */
 .mySlides1 {
     display: none;
     width: 1024px;
@@ -150,7 +150,7 @@ h2 {
 
 
 
-/* Style pour le premier Slider */
+/* Style pour le troisième Slider */
 .mySlides2 {
     display: none;
     width: 1024px;
@@ -267,11 +267,8 @@ section h3 {
     }
 
     .active {
-        /* display: flex;
-    flex-direction: column; */
-
         display: block;
-        top: 50%;
+        /* top: 50%; */
     }
 
     #icons {
@@ -284,6 +281,9 @@ section h3 {
 
     .active #icons:before {
         content: "\2715";
+        top: 2.5%;
+        left: 96.5%;
+        position: absolute;
     }
 
 

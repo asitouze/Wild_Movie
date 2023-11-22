@@ -86,14 +86,9 @@ function showDivs1(n1) {
 // Fait ce que PlusDivs réalise toutes les 5 secondes
 setInterval("plusDivs1(1)", 5000);
 
-
-
-
-
 icons.addEventListener("click", () => {
   nav.classList.toggle("active");
 })
-
 
 const links = document.querySelectorAll("nav li")
 
