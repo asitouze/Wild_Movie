@@ -58,21 +58,33 @@ button {
     /* padding: 10px; */
 }
 
-/* Tous les éléments que l'on retrouve dans le main sont en flex*/
+
 main {
+    min-height: calc(100vh - 111px - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 111px - 100px);
 }
 
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
+/* Le footer qui est en flex */
+footer {
+    background-color: #2B2B2B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px
 }
 
-/* Images que l'on va slide avec une taille choisit et première slider*/
+section {
+    display: inline-flex;
+}
+
+section h3 {
+    margin: 0 20px;
+}
+
 .mySlides {
     display: none;
     width: 1024px;
@@ -110,101 +122,30 @@ h2 {
     height: 100%;
 }
 
-/* Style pour le deuxième Slider */
-.mySlides1 {
-    display: none;
-    width: 1024px;
-    height: 400px;
+.oui {
+    display: flex;
+    margin-right: 10px;
 }
 
-.display-container1 {
-    position: relative;
-    margin-bottom: 30px;
+.mini {
+    /* margin: 20px; */
+    padding-top: 50px;
 }
 
-/* Déplacement des flèches sur l'image */
-.display-left1,
-.display-right1 {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.display-left1 {
-    left: 10px;
-}
-
-.display-right1 {
-    right: 10px;
-}
-
-.display-left1 img,
-.display-right1 img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* Style pour le troisième Slider */
-.mySlides2 {
-    display: none;
-    width: 1024px;
-    height: 400px;
-}
-
-.display-container2 {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-/* Déplacement des flèches sur l'image */
-.display-left2,
-.display-right2 {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.display-left2 {
-    left: 10px;
-}
-
-.display-right2 {
-    right: 10px;
-}
-
-.display-left2 img,
-.display-right2 img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Le footer qui est en flex */
-footer {
-    background-color: #2B2B2B;
-    color: white;
+.centre {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100px
+    padding-bottom: 50px;
 }
 
-section {
-    display: inline-flex;
+.h3 {
+    color: blue;
 }
 
-section h3 {
-    margin: 0 20px;
+h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 #icons {
@@ -212,30 +153,18 @@ section h3 {
     cursor: pointer;
 }
 
-/* Pour le responsive design d'un portable */
-@media screen and (max-width:1064px) {
 
-    h1 {
-        font-size: 15px;
+@media screen and (max-width:1064px) {
+    h2 {
         text-align: center;
     }
 
     main {
-        min-height: calc(100vh - 100px - 55px);
+        min-height: calc(100vh - 54.4px - 100px);
     }
 
 
     .mySlides {
-        width: 100%;
-        height: auto;
-    }
-
-    .mySlides1 {
-        width: 100%;
-        height: auto;
-    }
-
-    .mySlides2 {
         width: 100%;
         height: auto;
     }
@@ -275,7 +204,7 @@ section h3 {
         left: 96.5%;
         position: absolute;
     }
-    
+
     nav ul {
         position: fixed;
         display: none;
@@ -300,4 +229,27 @@ section h3 {
         left: 0px;
         position: relative;
     }
+
+    .oui {
+        flex-direction: column;
+    }
+
+    .pOui {
+        padding: 20px;
+    }
+
+    .mini {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .minaff {
+        padding: 10px;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
 }
