@@ -84,6 +84,7 @@ section {
 section h3 {
     margin: 0 20px;
 }
+
 .mySlides {
     display: none;
     width: 1024px;
@@ -124,4 +125,131 @@ section h3 {
 .oui {
     display: flex;
     margin-right: 10px;
+}
+
+.mini {
+    /* margin: 20px; */
+    padding-top: 50px;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.h3 {
+    color: blue;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#icons {
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1064px) {
+    h2 {
+        text-align: center;
+    }
+
+    main {
+        min-height: calc(100vh - 54.4px - 100px);
+    }
+
+
+    .mySlides {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #searchbar {
+        margin-top: 2.5px;
+        padding: 15px;
+        width: 200px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .active {
+        display: block;
+        /* top: 50%; */
+    }
+
+    #icons {
+        display: block;
+    }
+
+    #icons:before {
+        content: "\2630";
+    }
+
+    .active #icons:before {
+        content: "\2715";
+        top: 2.5%;
+        left: 96.5%;
+        position: absolute;
+    }
+
+    nav ul {
+        position: fixed;
+        display: none;
+        top: 5%;
+        flex-direction: column;
+        width: 100%;
+        background-color: #D7D7D7;
+        text-align: center;
+        transition: 0.25s;
+    }
+
+    nav li {
+        padding: 3px;
+    }
+
+    nav.active ul {
+        /* display:block;
+        left: 0;
+        position: relative; */
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        position: relative;
+    }
+
+    .oui {
+        flex-direction: column;
+    }
+
+    .pOui {
+        padding: 20px;
+    }
+
+    .mini {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .minaff {
+        padding: 10px;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
 }

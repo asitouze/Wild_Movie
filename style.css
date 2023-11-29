@@ -188,16 +188,6 @@ h2 {
     height: 100%;
 }
 
-
-p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
 /* Le footer qui est en flex */
 footer {
     background-color: #2B2B2B;
@@ -217,7 +207,6 @@ section h3 {
     margin: 0 20px;
 }
 
-
 #icons {
     display: none;
     cursor: pointer;
@@ -228,6 +217,7 @@ section h3 {
 
     h1 {
         font-size: 15px;
+        text-align: center;
     }
 
     main {
@@ -285,9 +275,7 @@ section h3 {
         left: 96.5%;
         position: absolute;
     }
-
-
-
+    
     nav ul {
         position: fixed;
         display: none;

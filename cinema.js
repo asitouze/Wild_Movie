@@ -41,3 +41,22 @@ function showDivs(n) {
 
 // Fait ce que PlusDivs réalise toutes les 5 secondes
 setInterval("plusDivs(1)", 5000);
+
+// Pour menu burger
+
+// Ajoute un écouteur d'événements "click" à l'élément avec la classe "icons"
+icons.addEventListener("click", () => {
+  // Change la classe "active" de l'élément avec le nom de variable "nav" quand on clic dessus
+  nav.classList.toggle("active");
+})
+
+// Sélectionne tous les éléments "li" à l'intérieur d'un élément "nav" dans links
+const links = document.querySelectorAll("nav li")
+
+// Ajoute un écouteur d'événements "click" à chaque élément "li" sélectionné que l'on nomme link
+links.forEach((link) => {
+  // Quand on clique sur "li", on supprime la classe "active" de l'élément avec le nom de variable "nav"
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  })
+})
