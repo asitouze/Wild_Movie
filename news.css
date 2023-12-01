@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 auto;
+    width: 100%;
+}
 nav {
     background-color: #D7D7D7;
 }
@@ -79,59 +86,66 @@ section h3 {
     /* margin-right:30px; */
 }
 
-
-
 .titre-paragraphe {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 .news-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80vw;
-    margin: 10px 10vw;
-    background-color: #d7d7d7f4;
-    align-items: flex-start;
+    /* padding: 1rem 10%; */
+    /* background-color: #d7d7d7f4; */
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 .sidebar-left{
-    
     display: flex;
     background-color: whitesmoke;
+    width: 55%;
+    flex-wrap: wrap;
 }
     
 .sidebar-right {
-    width: 20%;
+    width: 25%;
     display: flex;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     flex-direction: column;
-    gap: 36px;
-    font-size: large;
+    gap: 1rem;
+    /* font-size: large; */
     background-color: whitesmoke;
-    padding-bottom: 4%;
+    /* padding-bottom: 4%;*/
 
 }
 .entete-sidebar {
     width: 100%;
 }
-aside p{
+/* aside p{
     display: flex;
     flex-direction: row;
     width: 60%;
-}
-.card{
+} */
+.card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-left: 1%;
+    /* justify-content: space-around; */
+    /* gap: 5px; */
+    /* margin-left: 1%; */
+    align-items: flex-start;
+    width: 100%;
 }
 .card p{
     max-width: 300px;
     font-size: 16px;
+}
+p{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .card-right img{
     width: 100%;
@@ -143,6 +157,10 @@ aside p{
     font-size: 16px;
     font-family: serif;
     height:min-content;
+}
+
+h2{
+    color:gold;
 }
 h4{
     display:flex;
@@ -166,5 +184,8 @@ aside img{
 }
 .mozaique img {
     width: 32%;
+}
+.article {
+    margin-left: 1rem;
 }
 
