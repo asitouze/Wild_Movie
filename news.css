@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #D7D7D7;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#searchbar {
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 50%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+button {
+    background-color: blue;
+    color: #D7D7D7;
+    margin:10px;
+    /* padding: 10px; */
+}
+
+h1 {
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mySlides {
+    width: 100vh;
+    height: 50vh;
+}
+
+footer {
+    background-color: #2B2B2B;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:120px
+}
+
+section {
+    display: inline-flex;
+}
+
+section h3 {
+    margin: 0 30px;
+    /* margin-right:30px; */
+}
+
+
+
+.titre-paragraphe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.news-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    margin: 10px 10vw;
+    background-color: #d7d7d7f4;
+    align-items: flex-start;
+}
+.sidebar-left{
+    
+    display: flex;
+    background-color: whitesmoke;
+}
+    
+.sidebar-right {
+    width: 20%;
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 36px;
+    font-size: large;
+    background-color: whitesmoke;
+    padding-bottom: 4%;
+
+}
+.entete-sidebar {
+    width: 100%;
+}
+aside p{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 1%;
+}
+.card p{
+    max-width: 300px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-right img{
+    width: 100%;
+}
+
+    
+.card h4{
+    
+    font-size: 16px;
+    font-family: serif;
+    height:min-content;
+}
+h4{
+    display:flex;
+    justify-content: space-between;
+}
+aside img{
+    margin-bottom: 10px;
+}
+
+.mozaique {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+}
+.mozaique h2 {
+    width: 100%;
+    
+}
+.mozaique img {
+    width: 32%;
+}
+
