@@ -23,8 +23,6 @@
     box-sizing: border-box;
 }
 
-
-
 main{
     background-color:whitesmoke; 
     display: flex;
@@ -34,7 +32,7 @@ main{
     height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px 0 5px;
-    min-height: calc(100vh - 167.680px - 100px);
+    min-height: calc(100vh - 114.36px - 100px);
 }
 
 .container{
@@ -106,10 +104,10 @@ input{
     margin: 8px 0;
     width: 100%;
 }
-button.ghost{
+main button.ghost{
     background-color: transparent;
 }
-button{
+main button{
     background-color: whitesmoke;
     color:rgb(1, 12, 23);
     border: 1px solid whitesmoke;
@@ -122,11 +120,11 @@ button{
     border-color: black;
     transition: .2s ease-in;
 }
-button:active{
+main button:active{
     transform: scale(.95);
 }
 
-button:hover{
+main button:hover{
     cursor: pointer;
     background-color: rgb(1, 12, 23);
     color: whitesmoke;
@@ -222,7 +220,7 @@ h1{
 span{
     font-size: 14px;
 }
-a{
+main a{
     text-decoration: none;
     font-family: 14px;
     margin: 8px 0 16px;
@@ -282,7 +280,7 @@ li {
     background-color: blue;
     color: #D7D7D7;
     margin: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* Le footer qui est en flex */
