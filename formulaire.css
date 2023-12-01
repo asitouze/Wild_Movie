@@ -19,21 +19,22 @@
     width: 50%;
 } */
 /**************** formulaire a creer ******************/
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
 }
-body{
+
+
+
+main{
     background-color:whitesmoke; 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: -20px 0 50px;
+    margin: 5px 0 5px;
+    min-height: calc(100vh - 167.680px - 100px);
 }
 
 .container{
@@ -226,4 +227,79 @@ a{
     font-family: 14px;
     margin: 8px 0 16px;
     color:rgb(1, 12, 23);
+}
+
+/* Nav Bar */
+nav {
+    background-color: #D7D7D7;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    margin: 20px;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+.a:hover {
+    color: blue;
+}
+
+/* Barre de recherche */
+#searchbar {
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%;
+    background-image: url('Img nav/Loupe.png');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px auto;
+}
+
+/* Container de la barre de recherche avec position relative */
+.search-container {
+    position: relative;
+    width: 50%;
+}
+
+/* Pour le bouton contact */
+.button {
+    background-color: blue;
+    color: #D7D7D7;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Le footer qui est en flex */
+footer {
+    background-color: #2B2B2B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px
+}
+
+section {
+    display: inline-flex;
+}
+
+section h3 {
+    margin: 0 20px;
 }

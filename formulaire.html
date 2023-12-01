@@ -11,57 +11,86 @@
 </head>
 
 <body>
-    
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Creer un compte</h1>
-                <div class="social-container">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-google"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <span>Utiliser mon compte gmail</span>
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mot de passe">
-                <button>Creer le compte</button>
-            </form>
-        </div>
-        <div class="form-container login-container">
-            <form action="#">
-                <h1>Connecter-vous</h1>
-                <div class="social-container">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-google"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-                
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mot de passe">
-                <button>Se connecter</button>
-
-
-
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-pane1 overlay-left">
-                    <h1>Bienvenue!</h1>
-                    <p>Creer un compte</p>
-                    <button class="ghost" id="login">Se connecter</button>
-                </div>
-                <div class="overlay-pane1 overlay-right">
-                    <h1>Bienvenue!</h1>
-                    <p>Creer un compte</p>
-                    <button class="ghost" id="sign-up">Creer un compte</button>
-                </div>
-
+    <nav id="nav">
+        <header>
+            <a href="index.html"> <img src="Img nav/logo movie.png"></a>
+            <div class="search-container">
+                <input id="searchbar" type="text" name="search" placeholder="Rechercher un film...">
             </div>
+        </header>
+        <ul>
+            <li><a class="a" href="News.html">News</a></li>
+            <li><a class="a" href="cinema.html">Cinéma</a></li>
+            <li><a class="a" href="Séries">Séries</a></li>
+            <li><a class="a" href="Streaming">Streaming</a></li>
+            <li><a class="a" href="TVactu">TVactu</a></li>
+            <li><a class="a" href="Trailers">Trailers</a></li>
+            <li><a class="a" href="VOD">VOD</a></li>
+            <a href="formulaire.html"><button class="button" type="button"><img src="Img nav/Contact.png"> Mon compte</button></a>
+        </ul>
+        <!-- <div class="active" id="icons"></div> -->
+    </nav>
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Creer un compte</h1>
+                    <div class="social-container">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <span>Utiliser mon compte gmail</span>
+                    <input type="text" placeholder="Nom">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Mot de passe">
+                    <button>Creer le compte</button>
+                </form>
+            </div>
+            <div class="form-container login-container">
+                <form action="#">
+                    <h1>Connecter-vous</h1>
+                    <div class="social-container">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
 
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Mot de passe">
+                    <button>Se connecter</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-pane1 overlay-left">
+                        <h1>Bienvenue!</h1>
+                        <p>Creer un compte</p>
+                        <button class="ghost" id="login">Se connecter</button>
+                    </div>
+                    <div class="overlay-pane1 overlay-right">
+                        <h1>Bienvenue!</h1>
+                        <p>Creer un compte</p>
+                        <button class="ghost" id="sign-up">Creer un compte</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>Suivez nous
+        <ul>
+            <img src="img footer/Link - Suivez nous sur Facebook.png">
+            <img src="img footer/Link - Suivez nous sur Instagram.png">
+            <img src="img footer/Link - Suivez nous sur TikTok.png">
+            <img src="img footer/Link - Suivez nous sur Twitter.png">
+            <img src="img footer/Link - Contactez nous.png">
+        </ul>
+        <section>
+            <h3> A propos de nous </h3>
+            <h3> Contact </h3>
+            <h3> Mention légal</h3>
+        </section>
+    </footer>
 
     <script src="formulaire.js" charset="utf-8"></script>
 </body>
